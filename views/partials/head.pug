@@ -1,11 +1,11 @@
 // use bootstrapp navbar template from https://getbootstrap.com/docs/4.3/components/navbar/
-v.navbar.navbar-expand-lg.navbar-light.bg-light
-  a.navbar-brand(href='#') Menu
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+  a.navbar-brand(href='#') My Portfolio
   button.navbar-toggler(aria-expanded='false', aria-controls='navbarSupportedContent', aria-label='Toggle navigation', type='button', data-target='#navbarSupportedContent', data-toggle='collapse')
     span.navbar-toggler-icon
   #navbarSupportedContent.collapse.navbar-collapse
-    ul.navbar-nav.mr-auto
-      li.nav-item.active
+    ul.navbar-nav
+      li.nav-item
         a.nav-link(href='/') Home          
       li.nav-item
         a.nav-link(href='/about') About
@@ -14,7 +14,6 @@ v.navbar.navbar-expand-lg.navbar-light.bg-light
       li.nav-item
         a.nav-link(href='/services') Services
       li.nav-item
-        a.nav-link(href='/contact') Contact  
-    
-      input.form-control.mr-sm-2(aria-label='Search', type='search', placeholder='Search')
+        a.nav-link(href='/contact') Contact     
+      input.form-control.mr-sm-2(aria-label='Search', type='search', placeholder='Search')      
       button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
