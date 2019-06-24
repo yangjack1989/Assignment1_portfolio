@@ -1,5 +1,14 @@
 extends layout
 
-block content
-  h1= title
-  p Welcome to  my #{title}
+block content 
+  .container
+    h1 About Me
+  .container
+    .row
+      .col-sm-4
+        |Welcome to my E-Portfilio. I am studying Computer Programming at Georigan College. I have learned some Node js skills to develop a website. I enjoy creating and designing interacitve websites and cool software.
+      .col-sm-8
+        div
+          img(src='../public/images/ai.jpg', alt="about")
+    
+  
