@@ -3,8 +3,27 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-//use nodemailer
-//var nodemailer = require('nodemailer');
+
+// form  js
+const { body,validationResult } = require('express-validator/check');
+const { sanitizeBody } = require('express-validator/filter');
+body('name', 'Empty name').isLength({ min: 1 });
+body('email', 'Empty name').isLength({ min: 1 });
+body('message', 'Empty name').isLength({ min: 1 });
+(req, res, next) => {
+  // Extract the validation errors from a request.
+  const errors = validationResult(req);
+
+  if (!errors.isEmpty()) {
+      // There are errors. Render form again with sanitized values/errors messages.
+      // Error messages can be returned in an array using `errors.array()`.
+      }
+  else {
+      // Data from form is valid.
+      res.errors
+  }
+}
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
