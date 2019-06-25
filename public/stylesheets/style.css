@@ -1,7 +1,8 @@
 body, html {
   height: 100%;
-  margin: 0;
+  margin:0 px;
 }
+
 
 
 .bg{
@@ -15,4 +16,7 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.card-img-top {
+  height: 200px; 
 }

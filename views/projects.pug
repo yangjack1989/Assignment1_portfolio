@@ -1,5 +1,56 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to  my #{title}
+  // use and modifield template from https://startbootstrap.com/
+  .container
+    // Page Heading
+    h1.my-4
+      | MY Projects
+    p including group works
+    .row
+      .col-lg-4.col-sm-6.mb-4
+        .card.h-100
+          a(href='https://github.com/yangjack1989/Assignment1-Contacts')
+            img.card-img-top(alt='', src='https://techaeris.com/wp-content/uploads/2016/01/Java-logo-png.png')
+          .card-body
+            h4.card-title
+              a(href='https://github.com/yangjack1989/Assignment1-Contacts') Contact application
+            p.card-text
+              | Using Java to develop a Contact application and intergrete with MySQL database 
+      .col-lg-4.col-sm-6.mb-4
+        .card.h-100
+          a(href='https://github.com/yangjack1989/tictactoe')
+            img.card-img-top(alt='', src='https://www.rlocman.ru/i/Image/2015/11/10/JavaScript_Logo.gif')
+          .card-body
+            h4.card-title
+              a(href='#') TicTacToe Game
+            p.card-text
+              | Two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.
+      .col-lg-4.col-sm-6.mb-4
+        .card.h-100
+          a(href='https://github.com/yangjack1989/GeorgianPrograms')
+            img.card-img-top(alt='', src='https://chozan.co/wp-content/uploads/2017/02/WeChat-Mini-Program-2.png')
+          .card-body
+            h4.card-title
+              a(href='https://github.com/yangjack1989/GeorgianPrograms') Georgian College Programs Searching 
+            p.card-text
+              | This Wechat Mini Program during my first coop work term at International Center Georgian College for suporting recruitment in China.
+      .col-lg-4.col-sm-6.mb-4
+        .card.h-100
+          a(href='https://github.com/yangjack1989/assignment1-mvc')
+            img.card-img-top(alt='', src='http://wakeupandcode.com/wp-content/uploads/2016/03/asp-net-logo.png')
+          .card-body
+            h4.card-title
+              a(href='https://github.com/yangjack1989/assignment1-mvc') Web application 
+            p.card-text
+              | An Asp.net Web application with login and register system and database operation
+      .col-lg-4.col-sm-6.mb-4
+        .card.h-100
+          a(href='https://github.com/yangjack1989/vehiclesProject')
+            img.logo.card-img-top(alt='', src='https://image.flaticon.com/icons/png/512/74/74906.png')
+          .card-body
+            h4.card-title
+              a(href='https://github.com/yangjack1989/vehiclesProject') Vehicle Application
+            p.card-text
+              | A vehicle application incluedes information for different tables using C#
+    
